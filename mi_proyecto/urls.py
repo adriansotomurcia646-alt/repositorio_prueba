@@ -20,5 +20,6 @@ from django.http import HttpResponse
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', lambda request: HttpResponse('hola estoy haciendo mi primer proyecto django')),
+    path('', lambda request: HttpResponse('<h1>hola estoy haciendo mi primer proyecto django</h1>')),
+    path('inicio/', lambda request: HttpResponse('<p>django es un framework de desarrollo web de código abierto escrito en Python. Fue diseñado para ayudar a los desarrolladores a crear aplicaciones web de manera rápida y eficiente, siguiendo el principio de "no te repitas" (DRY, por sus siglas en inglés) y promoviendo la reutilización de código. Django proporciona una estructura sólida y herramientas integradas para manejar tareas comunes en el desarrollo web, como la gestión de bases de datos, la autenticación de usuarios, la creación de formularios y la administración del sitio web.</p>')),
 ]
